@@ -1,0 +1,8 @@
+pandas
+numpy
+langchain
+langgraph
+python-dotenv
+fastapi
+docker
+pathlib
