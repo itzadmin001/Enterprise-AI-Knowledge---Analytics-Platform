@@ -1,8 +1,11 @@
-pandas
-numpy
 langchain
 langgraph
-python-dotenv
 fastapi
-docker
-pathlib
+uvicorn[standard]
+python-multipart
+python-dotenv
+pandas
+numpy
+langchain-google-genai
+openpyxl
+scikit-learn
