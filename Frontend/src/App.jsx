@@ -119,7 +119,7 @@ function App() {
     };
 
     const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
-
+    console.log(API_BASE_URL)
     const handleProcess = async () => {
         if (!selectedFile) {
             setError('Please select a CSV or Excel file first.');
