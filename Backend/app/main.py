@@ -62,6 +62,7 @@ def health_check():
 
 @app.post("/run-analysis")
 async def run_analysis(file: UploadFile = File(...)) -> dict:
+    print("hello")
     try:
         if not file.filename:
             raise HTTPException(status_code=400, detail="File name is required.")
