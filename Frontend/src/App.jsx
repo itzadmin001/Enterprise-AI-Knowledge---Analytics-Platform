@@ -171,7 +171,7 @@ function App() {
                 <div className="absolute bottom-[-8%] right-[-5%] h-72 w-72 rounded-full bg-cyan-400/20 blur-3xl" />
             </div>
 
-            <div className="mx-auto max-w-7xl px-5 py-10 lg:px-8">
+            <div className="mx-auto max-w-8xl px-5 py-10 lg:px-8">
                 <section className="overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl shadow-indigo-950/30 backdrop-blur-xl">
                     <div className="border-b border-white/10 px-8 py-6">
                         <div className="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
