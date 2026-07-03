@@ -13,6 +13,9 @@ app = FastAPI()
 
 frontend_url = os.getenv("FRONTEND_URL", "http://localhost:3000")
 
+
+print("FRONTEND_URL =", frontend_url)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[

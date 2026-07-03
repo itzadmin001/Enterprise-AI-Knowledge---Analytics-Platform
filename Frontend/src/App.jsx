@@ -118,7 +118,7 @@ function App() {
         setResult(null);
     };
 
-    const API_BASE_URL = import.meta.env.BACKEND_URL || 'http://127.0.0.1:8000';
+    const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
     const handleProcess = async () => {
         if (!selectedFile) {
@@ -132,20 +132,22 @@ function App() {
 
         const formData = new FormData();
         formData.append('file', selectedFile);
-
+        console.log(formData, "formData")
         try {
             const res = await fetch(`${API_BASE_URL}/run-analysis`, {
                 method: 'POST',
                 body: formData,
             });
-
+            console.log(res, "res")
             const data = await res.json();
+            console.log(data, "data")
             if (!res.ok) {
                 throw new Error(data?.detail || 'Something went wrong while processing the file.');
             }
 
             setResult(data);
         } catch (err) {
+            console.log(err, "err")
             setError(err.message || 'Unexpected error occurred.');
         } finally {
             setLoading(false);
